@@ -1,0 +1,40 @@
+
+
+ <mat-sidenav-container>
+    <mat-sidenav mode="side" opened="true">
+ 	<button id="compose-btn" mat-raised-button color="warn" (click)="onCompose()">Compose</button>
+       	<mat-nav-list>
+    		<mat-list-item>
+    			<a matLine [routerLink]="['/mail/inbox']">Inbox</a>
+    			<button mat-icon-button >
+    				
+    			</button>
+    		</mat-list-item>
+    		<mat-list-item>
+    			<a matLine [routerLink]="['/mail/inbox/started']">Started</a>
+    			<button mat-icon-button >
+    				
+    			</button>
+    		</mat-list-item>
+    		<mat-list-item>
+    			<a matLine [routerLink]="['/mail/inbox/sent']">Sent Mail</a>
+    			<button mat-icon-button >
+    				
+    			</button>
+    		</mat-list-item>
+    		<mat-list-item>
+    			<a matLine [routerLink]="['/mail/inbox/drafts']">Draft</a>
+    			<button mat-icon-button >
+    				
+    			</button>
+    		</mat-list-item>
+    	</mat-nav-list>
+	</mat-sidenav>
+    <div class="my-content">
+    	<br><br>
+    	<router-outlet></router-outlet>
+    	<app-compose [showCompose]="showCompose"
+             (onClose)="onClose($event)">
+        </app-compose>
+    </div>
+  </mat-sidenav-container>

@@ -1,0 +1,33 @@
+<div class="container">
+	<mat-card>
+		<div>
+	    	<img class="img-responsive" src="https://gifimage.net/wp-content/uploads/2017/07/google-gif.gif" width="40%" height="40%">
+	    </div>
+	  	<mat-card-header>
+	  		<div>
+	  			<mat-card-title>Sign in</mat-card-title>
+	    		<mat-card-subtitle>to continue to Gmail</mat-card-subtitle>
+	  		</div>	    	
+	  	</mat-card-header>
+	  	<mat-card-content>
+	    	<form #form="ngForm" (ngSubmit)="onSubmit(form.value)" class="example-form">
+	    		<div>
+	    			<mat-form-field class="example-full-width flex">
+			    		<input name="email" matInput placeholder="Email" ngModel>
+			  		</mat-form-field>
+
+			  		<mat-form-field class="example-full-width">
+			    		<input name="password" type="password" matInput placeholder="Password" ngModel>
+			  		</mat-form-field >
+			  		
+	    		</div>
+			  	<div>
+			  		<button class="pull-right" mat-raised-button color="primary" type="submit">Primary</button>
+			  	</div>			  
+			</form>
+	  	</mat-card-content>
+	  	<mat-card-actions>
+	  		<br><br><br><br><br>
+   		</mat-card-actions>
+	</mat-card>
+</div>

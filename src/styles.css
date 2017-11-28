@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.search-bar {
+  padding-left: 0;
+  position: relative;
+}
+
+.search-bar .input-group {
+  width: 585px;
+}
+
+.inbox-sections {
+    margin-top: 10px;
+}
+
+.inbox-sections li {
+  font-size: 13px;
+  cursor: pointer;
+  padding: 5px 5px;
+}
+.inbox-sections li:hover {
+    background: #e5e5e5;
+}
+.inbox-sections .active {
+  color: #d14836;
+  font-weight: bold;
+}
+
+.inbox-sections .pending {
+  font-weight: bold;
+}
+.email-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #d0d0d0;
+  background-color: #f3f3f3;
+  font-weight: normal;
+  cursor: pointer;
+  width: 100%;
+	height: 100%;
+}
+
+.email-item .check {
+ 
+  padding: 0 15px;
+  float: left;
+}
+
+.email-item .people {
+  padding-left: 0;
+}
+
+.email-item.unread {
+  font-weight: bold;
+  background-color: #fff;
+  color: #000;
+}
+.message h3 {
+  font-size: 13px;
+  font-weight: normal;
+  display: inline;
+}
+
+.unread .message h3 {
+  font-weight: bold;
+}
+
+.clipper {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.message p {
+  font-size: 13px;
+  font-weight: normal;
+  display: inline;
+}
+
+#compose-btn {
+	padding: 0 45px;
+}
+

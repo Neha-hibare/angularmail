@@ -1,0 +1,33 @@
+
+<nav class="navbar navbar-default" role="navigation">
+	
+	<mat-toolbar color="primary" class="mat-elevation-z6">
+		<div>
+			<img class="img-responsive" src="https://gifimage.net/wp-content/uploads/2017/07/google-gif.gif" width="10%" height="10%">
+		</div>
+		
+		<div class="row pull-right">
+			<input type="text" name="">
+			<button mat-icon-button [matMenuTriggerFor]="menu">
+				<mat-icon>notifications_active</mat-icon>
+			</button>	
+			<button mat-icon-button [matMenuTriggerFor]="menu">
+			  <mat-icon>account_circle</mat-icon>
+			</button>
+			<mat-menu #menu="matMenu">
+			  <button mat-menu-item>
+			    <mat-icon>dialpad</mat-icon>
+			    <span>Redial</span>
+			  </button>
+			  <button mat-menu-item disabled>
+			    <mat-icon>voicemail</mat-icon>
+			    <span>Check voicemail</span>
+			  </button>
+			  <button mat-menu-item>
+			    <mat-icon>notifications_off</mat-icon>
+			    <span>Disable alerts</span>
+			  </button>
+			</mat-menu>
+		</div>
+	</mat-toolbar>
+</nav>

@@ -1,0 +1,118 @@
+.compose {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 6px 30px;
+}
+#compose {
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(#000, .2);
+  border: 1px solid #ccc;
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  width: 510px;
+  z-index: 10;
+}
+
+#compose .wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 5px;
+}
+
+#compose .header {
+  width: 100%;
+  background: #404040;
+  border-color: #404040;
+  padding: 10px 15px;
+}
+
+#compose .header .close, .inbox-sections .close {
+  float: right;
+  color: #b2b2b2;
+  font: 16px/16px sans-serif;
+  margin-top: -3px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.inbox-sections .close {
+  margin-top: 0;
+}
+
+#compose h2 {
+  font-size: 13px;
+  color: #fff;
+  margin: 0;
+}
+
+#compose label {
+  float: left;
+  width: 40px;
+}
+#compose .form-group {
+  border-bottom: 1px solid #ccc;
+}
+#compose .form-group input {
+  width: 100%;
+  padding-bottom: 8px;
+  border: none;
+}
+#compose .cc, .bcc {
+  float: right;
+  margin-left: 5px;
+}
+#compose .fit {
+  overflow: hidden;
+}
+#compose .from-address {
+  display: inline-block;
+  color: #777;
+}
+
+#compose textarea {
+  border: 0;
+  width: 100%;
+  height: 266px;
+}
+
+#compose .footer {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  overflow: hidden;
+  background: #F5F5F5;
+  padding: 10px 5px;
+}
+
+
+#compose .form-group.body {
+  border: 0;
+}
+
+#compose input.btn-primary, input.btn-primary {
+  background: #4d90fe;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 7px 25px;
+  border-color: #e5e5e5;
+}
+
+#compose input.btn-primary:hover, input.btn-primary:hover {
+  background: #4b8bf3;
+  border-color: #d5d3d3;
+}
+
+#compose input.btn-primary:disabled, input.btn-primary:disabled {
+  background: #4b8bf3;
+  border-color: #d5d3d3;
+  opacity: .65;
+}
+
+#compose input.btn-primary:disabled:hover, input.btn-primary:disabled:hover {
+  background: #4b8bf3;
+  border-color: #d5d3d3;
+  opacity: .65;
+}
